@@ -24,5 +24,14 @@ joblib.dump(model, 'price_model.pkl')
 if len(sys.argv) == 3:
     category = int(sys.argv[1])
     demand_score = float(sys.argv[2])
+    
+    # Input validation
+    if category not in [1, 2] or demand_score < 1 or demand_score > 10:
+        print("Error: Invalid input")
+        sys.exit(1)
+    
     prediction = model.predict([[category, demand_score]])
     print(round(prediction[0], 2))
+else:
+    print("Error: Expected 2 arguments (category and demand_score)")
+    sys.exit(1)
