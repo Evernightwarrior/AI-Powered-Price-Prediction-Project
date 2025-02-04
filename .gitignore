@@ -1,0 +1,13 @@
+# Java
+target/
+*.jar
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+*.iml

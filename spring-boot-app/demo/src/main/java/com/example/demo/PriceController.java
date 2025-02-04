@@ -16,7 +16,7 @@ public class PriceController {
         @RequestParam double demandScore) throws IOException {
 
         // Path to your Python script (adjust this!)
-        String pythonScriptPath = "ai-model/price_model.py";
+        String pythonScriptPath = "C:/Users/hp/OneDrive/Desktop/AI-Powered Price Prediction Project/AI model/price_model.py";
 
         // Execute Python script
         ProcessBuilder pb = new ProcessBuilder(
